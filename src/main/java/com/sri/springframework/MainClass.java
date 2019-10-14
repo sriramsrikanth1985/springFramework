@@ -11,11 +11,11 @@ public class MainClass {
 		
 		//IVehicle obj = new Bike();
 		//IVehicle obj = (IVehicle) context.getBean("myCycle");
-		IVehicle obj = (IVehicle) context.getBean("cycle");
+		IVehicle obj = (IVehicle) context.getBean("vehicle");
 		obj.drive();
 		
-		Tyre tyre = (Tyre) context.getBean("tyre");
-		System.out.println("MainClass"+tyre);
+/*		Tyre tyre = (Tyre) context.getBean("tyre");
+		System.out.println("MainClass"+tyre);*/
 	}
 
 }

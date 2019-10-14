@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-<bean id="car" class="com.sri.springframework.Car"></bean>
+<bean id="vehicle" class="com.sri.springframework.Bike"></bean>
 <context:component-scan base-package="com.sri.springframework"></context:component-scan>
 
 <bean id="tyre" class="com.sri.springframework.Tyre">
