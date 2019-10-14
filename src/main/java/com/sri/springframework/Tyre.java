@@ -2,7 +2,6 @@ package com.sri.springframework;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class Tyre {
 	private String make;
 

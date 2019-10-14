@@ -10,6 +10,7 @@ public class MainClass {
 		
 		
 		//IVehicle obj = new Bike();
+		//IVehicle obj = (IVehicle) context.getBean("myCycle");
 		IVehicle obj = (IVehicle) context.getBean("cycle");
 		obj.drive();
 		
