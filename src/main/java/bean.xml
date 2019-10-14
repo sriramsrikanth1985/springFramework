@@ -11,7 +11,12 @@
 <context:component-scan base-package="com.sri.springframework"></context:component-scan>
 
 <bean id="tyre" class="com.sri.springframework.Tyre">
-<property name="make" value="MRF"></property>
+<!--  <property name="make" value="MRF"></property> -->
+<!-- <constructor-arg index="1" value="MRFNEW"></constructor-arg> -->
+<constructor-arg index="0" value="MRFNEWPrint"></constructor-arg>
+<constructor-arg index="1" type="int" value="45"></constructor-arg>
 </bean>
+
+<import resource="../../beanAtDifferentLocation.xml"/>
 
 </beans>
