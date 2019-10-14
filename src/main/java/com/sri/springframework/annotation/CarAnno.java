@@ -1,7 +1,9 @@
 package com.sri.springframework.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CarAnno implements IVehicleAnno{
 	@Autowired
 	private AutoAnno auto;
