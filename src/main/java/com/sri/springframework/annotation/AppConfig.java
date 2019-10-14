@@ -5,15 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan
+@ComponentScan(basePackages="com.sri.springframework.annotation,com.sri.springframework")
 public class AppConfig {
-/*	@Bean
-	public CarAnno getCarAnno(){
-		return new CarAnno();
-	}
-	
-	@Bean
-	public AutoAnno getAuto(){
-		return new AutoAnno();
-	}*/
+
 }
