@@ -1,6 +1,8 @@
 package com.sri.springframework.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import com.sri.springframework.Bike;
@@ -13,6 +15,7 @@ public class CarAnno implements IVehicleAnno{
 	private AutoAnno auto;
 	
 	@Autowired
+	@Qualifier("bike")
 	private IVehicle obj;
 
 	public void drive() {
