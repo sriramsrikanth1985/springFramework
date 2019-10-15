@@ -14,8 +14,17 @@ public class MainClass {
 		IVehicle obj = (IVehicle) context.getBean("vehicle");
 		obj.drive();
 		
-/*		Tyre tyre = (Tyre) context.getBean("tyre");
-		System.out.println("MainClass"+tyre);*/
+		Tyre tyre = (Tyre) context.getBean("tyre");
+		System.out.println("MainClass"+tyre);
+		
+		tyre.setMake("CEAT");
+		System.out.println("After modification MainClass"+tyre);
+		
+		Tyre tyre1 = (Tyre) context.getBean("tyre");
+		System.out.println("another obj MainClass"+tyre1);
+		
+		Tyre tyre2 = (Tyre) context.getBean("tyre");
+		System.out.println("another new obj MainClass"+tyre2);
 	}
 
 }

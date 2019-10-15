@@ -10,7 +10,7 @@
 <bean id="vehicle" class="com.sri.springframework.Bike"></bean>
 <context:component-scan base-package="com.sri.springframework"></context:component-scan>
 
-<bean id="tyre" class="com.sri.springframework.Tyre">
+<bean id="tyre" class="com.sri.springframework.Tyre" >
 <property name="make" value="MRF"></property>
 </bean>
 
